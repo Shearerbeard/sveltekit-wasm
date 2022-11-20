@@ -52,7 +52,24 @@ name = "<new-crate-name>"
 # ⚠️ Note: must be set to `true`, default is `false`
 link = true
 ```
-- Once registered in rsw.toml your crate can be imported as an npm module
+- You'll also need to tell vite about your new or edited crate path as vite does not want to bundle anything outside of the src root by default. Edit your vite.config.ts UserConfig.server.fs.allow:
+```js
+import { sveltekit } from '@sveltejs/kit/vite';
+import type { UserConfig } from 'vite';
+import { ViteRsw } from 'vite-plugin-rsw';
+
+const config: UserConfig = {
+	plugins: [sveltekit(), ViteRsw()],
+	server: {
+		fs: {
+			allow: ["./<new-crate-name>"]
+		}
+	}
+};
+
+export default config;
+```
+- Once registered in rsw.toml and allowed in vite.config.ts your crate can be imported as an npm module
 ```ts
 import init, { foo, bar} from "<my-wasm-crate>"
 
