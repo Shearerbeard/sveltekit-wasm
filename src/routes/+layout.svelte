@@ -9,7 +9,7 @@
     </button>
   </div>
   <div class="flex-1">
-    <span class="btn btn-ghost normal-case text-xl">daisyUI</span>
+    <span class="btn btn-ghost normal-case text-xl">Svelte + Wasm</span>
   </div>
   <div class="flex-none">
     <button class="btn btn-square btn-ghost">
