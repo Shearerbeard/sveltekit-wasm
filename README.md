@@ -4,6 +4,9 @@ Base project template for building SPA UIs with Svelte powered by Rust/WASM for 
 # Svelte
 Svelte project bootstrapped with [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
+# Tailwind
+[Tailwind CSS](https://tailwindcss.com/) style utility classes generated and imported automatically on vite builds.
+
 # Rust
 Rust is a strongly typed general perfect programing language. Install [here](https://www.rust-lang.org/tools/install)
 
