@@ -1,0 +1,16 @@
+[INFO]: Checking for the Wasm target...
+[INFO]: Compiling to Wasm...
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+warning: function `set_panic_hook` is never used
+ --> src/utils.rs:1:8
+  |
+1 | pub fn set_panic_hook() {
+  |        ^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: `trucker-buddy-wasm` (lib) generated 1 warning
+    Finished dev [unoptimized + debuginfo] target(s) in 0.02s
+[INFO]: Installing wasm-bindgen...
+Error: invalid type: sequence, expected a string at line 3 column 19

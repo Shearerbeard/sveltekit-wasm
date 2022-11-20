@@ -1,0 +1,3 @@
+[RSW::ERR]
+[RSW::NAME] :~> trucker-buddy-wasm
+[RSW::BUILD] :~> wasm-pack build trucker-buddy-wasm --out-dir pkg --target web --dev
